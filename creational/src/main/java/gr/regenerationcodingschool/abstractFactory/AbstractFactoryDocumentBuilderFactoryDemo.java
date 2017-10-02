@@ -13,9 +13,14 @@ public class AbstractFactoryDocumentBuilderFactoryDemo {
 		
 		String xml = "<document><body><stock>AAPL</stock></body></document>";
 		ByteArrayInputStream bais = new ByteArrayInputStream(xml.getBytes());
-		
+
+		//Abstract Factory
 		DocumentBuilderFactory abstractFactory = DocumentBuilderFactory.newInstance();
+
+		//Concrete Factory
 		DocumentBuilder factory = abstractFactory.newDocumentBuilder();
+
+        //Concrete Class returned
 		Document doc = factory.parse(bais);
 
 		doc.getDocumentElement().normalize();
