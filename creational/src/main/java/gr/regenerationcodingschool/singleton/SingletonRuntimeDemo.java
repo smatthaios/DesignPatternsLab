@@ -1,22 +1,22 @@
 package gr.regenerationcodingschool.singleton;
 
-public class SingletonEverydayDemo {
+public class SingletonRuntimeDemo {
 
 	public static void main(String args[]) {
-		
 		Runtime singletonRuntime = Runtime.getRuntime();
-
-		singletonRuntime.gc();
-		
 		System.out.println(singletonRuntime);
 		
 		Runtime anotherInstance = Runtime.getRuntime();
-		
 		System.out.println(anotherInstance);
-		
-		if(singletonRuntime == anotherInstance) {
-			System.out.println("They are the same instance");
-		}
-		
+
+		areSameObjects(singletonRuntime, anotherInstance);
 	}
+
+	private static void areSameObjects(Runtime singletonRuntime, Runtime anotherInstance) {
+		if(singletonRuntime == anotherInstance) {
+			System.out.println("Same instance");
+		}
+	}
+
+
 }

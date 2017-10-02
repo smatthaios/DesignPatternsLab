@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Registry {
 
-	private Map<String, Item> items = new HashMap<String, Item>();
+	private Map<String, Item> items = new HashMap<>();
 	
 	public Registry() {
 		loadItems();

@@ -29,36 +29,47 @@ public class LunchOrder {
 		return meat;
 	}
 
+	@Override
+	public String toString() {
+		return "LunchOrder{" +
+				"bread='" + bread + '\'' +
+				", condiments='" + condiments + '\'' +
+				", dressing='" + dressing + '\'' +
+				", meat='" + meat + '\'' +
+				'}';
+	}
+
 	public static class Builder {
 		private String bread;
 		private String condiments;
 		private String dressing;
 		private String meat;
 
-		public Builder() {
-
+		//Make condiments mandatory
+		public Builder(String condiments) {
+			this.condiments = condiments;
 		}
 
 		public LunchOrder build() {
 			return new LunchOrder(this);
 		}
 
-		public Builder bread(String bread) {
+		public Builder withBread(String bread) {
 			this.bread = bread;
 			return this;
 		}
 
-		public Builder condiments(String condiments) {
+		/*public Builder withCondiments(String condiments) {
 			this.condiments = condiments;
 			return this;
-		}
+		}*/
 
-		public Builder dressing(String dressing) {
+		public Builder withDressing(String dressing) {
 			this.dressing = dressing;
 			return this;
 		}
 
-		public Builder meat(String meat) {
+		public Builder withMeat(String meat) {
 			this.meat = meat;
 			return this;
 		}
