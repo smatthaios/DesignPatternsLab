@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>regenerationcodingschool</groupId>
-    <artifactId>creational</artifactId>
+    <artifactId>structural</artifactId>
     <version>1.0-SNAPSHOT</version>
 	
 	<parent>
@@ -14,11 +14,16 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derby</artifactId>
-        </dependency>
-    </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.twitter4j</groupId>
+			<artifactId>twitter4j-core</artifactId>
+			<version>4.0.6</version>
+		</dependency>
+	</dependencies>
 
 </project>

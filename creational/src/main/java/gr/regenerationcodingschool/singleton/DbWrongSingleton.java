@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class DbWrongSingleton {
 
-    //private static DbSingleton instance = new DbSingleton();
+    private static DbWrongSingleton instance = null;
 
 	private DbWrongSingleton() {
 		try {
@@ -17,7 +17,10 @@ public class DbWrongSingleton {
 	
 	public static DbWrongSingleton getInstance() {
 		//not a singleton - new instance each time
-		return new DbWrongSingleton();
+        if(instance == null) {
+            instance = new DbWrongSingleton();
+        }
+		return instance;
 	}
 	
 }

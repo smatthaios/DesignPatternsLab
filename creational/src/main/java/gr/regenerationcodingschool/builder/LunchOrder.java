@@ -46,8 +46,8 @@ public class LunchOrder {
 		private String meat;
 
 		//Make condiments mandatory
-		public Builder(String condiments) {
-			this.condiments = condiments;
+		public Builder(/*String condiments*/) {
+			/*this.condiments = condiments;*/
 		}
 
 		public LunchOrder build() {
@@ -59,10 +59,10 @@ public class LunchOrder {
 			return this;
 		}
 
-		/*public Builder withCondiments(String condiments) {
+		public Builder withCondiments(String condiments) {
 			this.condiments = condiments;
 			return this;
-		}*/
+		}
 
 		public Builder withDressing(String dressing) {
 			this.dressing = dressing;
