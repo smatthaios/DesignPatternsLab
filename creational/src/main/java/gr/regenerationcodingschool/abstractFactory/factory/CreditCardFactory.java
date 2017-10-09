@@ -1,10 +1,14 @@
-package gr.regenerationcodingschool.abstractFactory;
+package gr.regenerationcodingschool.abstractFactory.factory;
+
+import gr.regenerationcodingschool.abstractFactory.card.CreditCard;
+import gr.regenerationcodingschool.abstractFactory.validator.Validator;
 
 //AbstractFactory
 public abstract class CreditCardFactory {
 
 	public static CreditCardFactory getCreditCardFactory(int creditScore) {
-	
+
+		//Refactor to is Amex eligible
 		if(creditScore > 650) {
 			return new AmexFactory();
 		}

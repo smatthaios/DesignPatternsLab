@@ -1,5 +1,9 @@
 package gr.regenerationcodingschool.abstractFactory;
 
+import gr.regenerationcodingschool.abstractFactory.card.CreditCard;
+import gr.regenerationcodingschool.abstractFactory.factory.CardType;
+import gr.regenerationcodingschool.abstractFactory.factory.CreditCardFactory;
+
 public class AbstractFactoryDemo {
 
 	public static void main(String[] args) {

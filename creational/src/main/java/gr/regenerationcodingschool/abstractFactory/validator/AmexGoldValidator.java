@@ -1,4 +1,6 @@
-package gr.regenerationcodingschool.abstractFactory;
+package gr.regenerationcodingschool.abstractFactory.validator;
+
+import gr.regenerationcodingschool.abstractFactory.card.CreditCard;
 
 public class AmexGoldValidator implements Validator {
 

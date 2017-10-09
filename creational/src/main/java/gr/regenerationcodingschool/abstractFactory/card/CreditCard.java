@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.abstractFactory;
+package gr.regenerationcodingschool.abstractFactory.card;
 
 //AbstractProduct
 public abstract class CreditCard {
