@@ -12,7 +12,7 @@ public class WithoutAbstractFactoryDemo {
         int salary = 1500;
         CreditCard resultCard = null;
 
-        if(creditScore > 650) {
+        if (creditScore > 650) {
             //Amex
             switch (cardType) {
                 case GOLD:
@@ -25,8 +25,7 @@ public class WithoutAbstractFactoryDemo {
                     resultCard = null;
                     break;
             }
-        }
-        else if (salary > 2500) {
+        } else if (salary > 2500) {
             //Visa
             switch (cardType) {
                 case GOLD:

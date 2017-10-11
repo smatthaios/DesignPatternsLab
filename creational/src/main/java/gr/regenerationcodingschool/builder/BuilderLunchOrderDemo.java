@@ -2,12 +2,12 @@ package gr.regenerationcodingschool.builder;
 
 public class BuilderLunchOrderDemo {
 
-	public static void main(String args[]) {
-		
-		LunchOrder.Builder builder = new LunchOrder.Builder();
+    public static void main(String args[]) {
+
+        LunchOrder.Builder builder = new LunchOrder.Builder();
 
 		/*LunchOrder lunchOrder = builder
-				.withBread("Wheat")
+                .withBread("Wheat")
 				.withDressing("Mayo")
 				.withMeat("Turkey")
 				.build();*/
@@ -18,6 +18,6 @@ public class BuilderLunchOrderDemo {
         lunchOrderBuilder = builder.withCondiments("Curry");
 
         LunchOrder lunchOrder = lunchOrderBuilder.build();
-		System.out.println(lunchOrder);
-	}
+        System.out.println(lunchOrder);
+    }
 }
