@@ -10,4 +10,9 @@ public class Blog extends Website {
         pages.add(new ContactPage());
     }
 
+    @Override
+    public boolean isNull(){
+        return false;
+    }
+
 }

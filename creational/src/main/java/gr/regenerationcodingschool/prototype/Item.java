@@ -4,11 +4,7 @@ public abstract class Item implements Cloneable {
     private String title;
     private double price;
     private String url;
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
+    private Case itemCase;
 
     public String getTitle() {
         return title;
@@ -34,4 +30,27 @@ public abstract class Item implements Cloneable {
         this.url = url;
     }
 
+    public Case getItemCase() {
+        return itemCase;
+    }
+
+    public void setItemCase(Case itemCase) {
+        this.itemCase = itemCase;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        this.itemCase = (Case)this.itemCase.clone();
+        return super.clone();
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                ", url='" + url + '\'' +
+                ", itemCase=" + itemCase +
+                '}';
+    }
 }

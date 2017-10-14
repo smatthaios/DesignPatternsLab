@@ -1,16 +1,19 @@
 package gr.regenerationcodingschool.builder;
 
 public class LunchOrder {
-    private final String bread;
-    private final String condiments;
-    private final String dressing;
-    private final String meat;
+    private String bread;
+    private String condiments;
+    private String dressing;
+    private String meat;
 
-    private LunchOrder(Builder builder) {
+    private LunchOrder(LunchOrder.Builder builder) {
         this.bread = builder.bread;
         this.condiments = builder.condiments;
         this.dressing = builder.dressing;
         this.meat = builder.meat;
+    }
+
+    public LunchOrder() {
     }
 
     public String getBread() {
@@ -27,6 +30,22 @@ public class LunchOrder {
 
     public String getMeat() {
         return meat;
+    }
+
+    public void setBread(String bread) {
+        this.bread = bread;
+    }
+
+    public void setCondiments(String condiments) {
+        this.condiments = condiments;
+    }
+
+    public void setDressing(String dressing) {
+        this.dressing = dressing;
+    }
+
+    public void setMeat(String meat) {
+        this.meat = meat;
     }
 
     @Override

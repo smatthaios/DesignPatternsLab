@@ -15,6 +15,7 @@ public class LunchOrderBeanDemo {
         System.out.println(lunchOrderBean.getCondiments());
         System.out.println(lunchOrderBean.getDressing());
         System.out.println(lunchOrderBean.getMeat());
-    }
 
+        // Also object is not immutable
+    }
 }

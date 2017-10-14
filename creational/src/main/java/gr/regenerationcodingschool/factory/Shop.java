@@ -9,4 +9,9 @@ public class Shop extends Website {
         pages.add(new SearchPage());
     }
 
+    @Override
+    public boolean isNull(){
+        return false;
+    }
+
 }

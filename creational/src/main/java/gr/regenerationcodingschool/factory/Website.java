@@ -15,6 +15,8 @@ public abstract class Website {
         return pages;
     }
 
+    public abstract boolean isNull();
+
     public abstract void createWebsite();
 
 }

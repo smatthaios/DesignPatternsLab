@@ -5,20 +5,22 @@ public class PrototypeDemo {
     public static void main(String[] args) {
         Registry registry = new Registry();
         Movie movie = (Movie) registry.createItem("Movie");
-        movie.setTitle("Creational Patterns in Java");
-
-        System.out.println(movie);
-        System.out.println(movie.getRuntime());
-        System.out.println(movie.getTitle());
-        System.out.println(movie.getUrl());
+        movie.setTitle("Pirates of the Caribbean");
+        printMovie(movie);
 
         Movie anotherMovie = (Movie) registry.createItem("Movie");
         anotherMovie.setTitle("Gang of Four");
+        printMovie(anotherMovie);
 
-        System.out.println(anotherMovie);
-        System.out.println(anotherMovie.getRuntime());
-        System.out.println(anotherMovie.getTitle());
-        System.out.println(anotherMovie.getUrl());
+
+        //We change the case color and print again the movies
+        anotherMovie.getItemCase().setColor("red");
+        printMovie(movie);
+        printMovie(anotherMovie);
     }
 
+    private static void printMovie(Movie movie) {
+        System.out.println(movie);
+        System.out.println("\n");
+    }
 }
