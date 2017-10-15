@@ -5,20 +5,20 @@ public class CompositeMenuDemo {
 
 	public static void main(String[] args) {
 		
-		Menu mainMenu = new Menu("Main", "/main");
+		MenuComposite mainMenuComposite = new MenuComposite("Main", "/main");
 		
-		MenuItem safetyMenuItem = new MenuItem("Safety", "/safety");
+		MenuLeaf safetyMenuLeaf = new MenuLeaf("Safety", "/safety");
 		
-		mainMenu.add(safetyMenuItem);
+		mainMenuComposite.add(safetyMenuLeaf);
 		
-		Menu claimsSubMenu = new Menu("Claims", "/claims");
+		MenuComposite claimsSubMenuComposite = new MenuComposite("Claims", "/claims");
 		
-		mainMenu.add(claimsSubMenu);
+		mainMenuComposite.add(claimsSubMenuComposite);
 		
-		MenuItem personalClaimsMenu = new MenuItem("Personal Claim", "/personalClaims");
+		MenuLeaf personalClaimsMenu = new MenuLeaf("Personal Claim", "/personalClaims");
 		
-		claimsSubMenu.add(personalClaimsMenu);
+		claimsSubMenuComposite.add(personalClaimsMenu);
 		
-		System.out.println(mainMenu.toString());
+		System.out.println(mainMenuComposite.toString());
 	}
 }

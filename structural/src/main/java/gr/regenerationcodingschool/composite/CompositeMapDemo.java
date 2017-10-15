@@ -3,7 +3,7 @@ package gr.regenerationcodingschool.composite;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CompositeEverydayDemo {
+public class CompositeMapDemo {
 
 	public static void main(String args []) {
 		Map<String, String> personAttributes = new HashMap<>();

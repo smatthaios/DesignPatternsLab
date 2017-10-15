@@ -1,38 +1,40 @@
 package gr.regenerationcodingschool.composite;
 
-import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Menu extends MenuComponent {
+public abstract class Menu {
+	String name;
+	String url;
+	protected List<Menu> childMenuComponents = new ArrayList<>();
 	
-	public Menu(String name, String url) {
-		this.name = name;
-		this.url = url;
+	public Menu add(Menu menuComponent) {
+		throw new UnsupportedOperationException("Feature not implemented at this level");
+	}
+
+	public Menu remove(Menu menuComponent) {
+		throw new UnsupportedOperationException("Feature not implemented at this level");
+	}
+
+	public List<Menu> getChildMenuComponents() {
+        throw new UnsupportedOperationException("Feature not implemented at this level");
 	}
 	
-	@Override
-	public MenuComponent add(MenuComponent menuComponent) {
-		menuComponents.add(menuComponent);
-		return menuComponent;
+	public String getName() {
+		return name;
 	}
 	
-	@Override
-	public MenuComponent remove(MenuComponent menuComponent) {
-		menuComponents.remove(menuComponent);
-		return menuComponent;
-	}
+	public String getUrl() {
+		return url;
+	}	
 	
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder(); //builder pattern
-		
-		builder.append(print(this));
-		
-		Iterator<MenuComponent> itr = menuComponents.iterator();
-		while(itr.hasNext()) {
-			MenuComponent menuComponent = itr.next();
-			builder.append(menuComponent.toString());
-		}
-		
+	public abstract String toString();
+	
+	String print(Menu menuComponent) {
+		StringBuilder builder = new StringBuilder(menuComponent.getName());
+		builder.append(": ");
+		builder.append(menuComponent.getUrl());
+		builder.append("\n");
 		return builder.toString();
 	}
 }

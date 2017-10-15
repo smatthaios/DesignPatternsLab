@@ -1,13 +1,14 @@
 package gr.regenerationcodingschool.composite;
 
 
-public class MenuItem extends MenuComponent {
+public class MenuLeaf extends Menu {
 
-	public MenuItem(String name, String url) {
+	public MenuLeaf(String name, String url) {
 		this.name = name;
 		this.url = url;
 	}
-	
+
+	//Common Operation - Both Leaf and Composite have it
 	@Override
 	public String toString() {
 		return print(this);
