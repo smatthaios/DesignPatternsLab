@@ -1,6 +1,6 @@
 package gr.regenerationcodingschool.flyweight;
 
-public class FlyweightEverydayDemo {
+public class FlyweightIntegerDemo {
 
 	public static void main(String args[]) throws Exception {
 		

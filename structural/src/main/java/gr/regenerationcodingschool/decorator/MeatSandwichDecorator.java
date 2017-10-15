@@ -1,8 +1,8 @@
 package gr.regenerationcodingschool.decorator;
 
-public class MeatDecorator extends SandwichDecorator {
+public class MeatSandwichDecorator extends SandwichDecorator {
 
-	public MeatDecorator(Sandwich customSandwich) {
+	public MeatSandwichDecorator(Sandwich customSandwich) {
 		super(customSandwich);
 	}
 

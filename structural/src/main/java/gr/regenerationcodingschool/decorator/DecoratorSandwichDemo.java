@@ -3,8 +3,12 @@ package gr.regenerationcodingschool.decorator;
 public class DecoratorSandwichDemo {
 
 	public static void main(String args[]) {
-		Sandwich sandwich = new DressingDecorator(new MeatDecorator(new SimpleSandwich()));
+        ConcreteSandwich sandwich = new ConcreteSandwich();
+        MeatSandwichDecorator meatSandwich = new MeatSandwichDecorator(sandwich);
+        DressingSandwichDecorator dressingMeatSandwich = new DressingSandwichDecorator(meatSandwich);
+
+		//Sandwich sandwich = new DressingSandwichDecorator(new MeatSandwichDecorator(new ConcreteSandwich()));
 		
-		System.out.println(sandwich.make());
+		System.out.println(dressingMeatSandwich.make());
 	}
 }

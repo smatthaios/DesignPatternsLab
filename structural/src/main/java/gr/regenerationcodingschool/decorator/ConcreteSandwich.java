@@ -1,6 +1,6 @@
 package gr.regenerationcodingschool.decorator;
 
-public class SimpleSandwich implements Sandwich {
+public class ConcreteSandwich implements Sandwich {
 
 	@Override
 	public String make() {
