@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.bridge.shape2;
+package gr.regenerationcodingschool.bridge.shapeWithBridge;
 
 public class Red implements Color {
 

@@ -3,7 +3,7 @@ package gr.regenerationcodingschool.adapter;
 import java.util.Arrays;
 import java.util.List;
 
-public class AdapterEverydayDemo {
+public class AdapterArrayDemo {
 
 	public static void main(String args[]) {
 		

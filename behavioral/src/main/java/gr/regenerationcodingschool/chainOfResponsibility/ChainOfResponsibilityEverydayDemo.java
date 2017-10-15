@@ -1,4 +1,4 @@
-package com.pluralsight.chain;
+package gr.regenerationcodingschool.chainOfResponsibility;
 
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;

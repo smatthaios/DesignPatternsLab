@@ -6,11 +6,11 @@ public class LunchOrder {
     private String dressing;
     private String meat;
 
-    private LunchOrder(LunchOrder.Builder builder) {
-        this.bread = builder.bread;
-        this.condiments = builder.condiments;
-        this.dressing = builder.dressing;
-        this.meat = builder.meat;
+    private LunchOrder(String bread, String condiments, String dressing, String meat) {
+        this.bread = bread;
+        this.condiments = condiments;
+        this.dressing = dressing;
+        this.meat = meat;
     }
 
     public LunchOrder() {
@@ -58,15 +58,15 @@ public class LunchOrder {
                 '}';
     }
 
-    public static class Builder {
+    /*public static class Builder {
         private String bread;
         private String condiments;
         private String dressing;
         private String meat;
 
         //Make condiments mandatory
-        public Builder(/*String condiments*/) {
-            /*this.condiments = condiments;*/
+        public Builder(*//*String condiments*//*) {
+            *//*this.condiments = condiments;*//*
         }
 
         public LunchOrder build() {
@@ -93,6 +93,6 @@ public class LunchOrder {
             return this;
         }
 
-    }
+    }*/
 
 }

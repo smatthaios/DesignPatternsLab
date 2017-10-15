@@ -11,7 +11,7 @@ public final class LunchOrderBuilder {
     private LunchOrderBuilder() {
     }
 
-    public static LunchOrderBuilder aLunchOrder() {
+    public static LunchOrderBuilder getLunchOrderBuilder() {
         return new LunchOrderBuilder();
     }
 

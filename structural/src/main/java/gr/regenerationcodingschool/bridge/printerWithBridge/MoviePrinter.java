@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.bridge;
+package gr.regenerationcodingschool.bridge.printerWithBridge;
 
 import java.util.ArrayList;
 import java.util.List;

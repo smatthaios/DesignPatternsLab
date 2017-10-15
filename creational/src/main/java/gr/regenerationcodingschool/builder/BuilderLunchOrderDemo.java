@@ -1,10 +1,12 @@
 package gr.regenerationcodingschool.builder;
 
+import gr.regenerationcodingschool.builder.builders.LunchOrderBuilder;
+
 public class BuilderLunchOrderDemo {
 
     public static void main(String args[]) {
 
-        LunchOrder.Builder builder = new LunchOrder.Builder();
+        LunchOrderBuilder builder = LunchOrderBuilder.getLunchOrderBuilder();
 
 		/*LunchOrder lunchOrder = builder
                 .withBread("Wheat")
@@ -12,12 +14,12 @@ public class BuilderLunchOrderDemo {
 				.withMeat("Turkey")
 				.build();*/
 
-        LunchOrder.Builder lunchOrderBuilder = builder.withBread("Wheat");
-        lunchOrderBuilder = builder.withDressing("Mayo");
-        lunchOrderBuilder = builder.withMeat("Turkey");
-        lunchOrderBuilder = builder.withCondiments("Curry");
+        LunchOrder lunchOrder = builder.withBread("Wheat")
+                .withCondiments("Curry")
+                .withDressing("Mayo")
+                .withMeat("Turkey")
+                .build();
 
-        LunchOrder lunchOrder = lunchOrderBuilder.build();
         System.out.println(lunchOrder);
     }
 }

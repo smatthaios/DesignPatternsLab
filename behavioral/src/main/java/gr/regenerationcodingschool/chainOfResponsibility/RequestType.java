@@ -1,4 +1,4 @@
-package com.pluralsight.chain;
+package gr.regenerationcodingschool.chainOfResponsibility;
 
 public enum RequestType {
 	CONFERENCE, PURCHASE;

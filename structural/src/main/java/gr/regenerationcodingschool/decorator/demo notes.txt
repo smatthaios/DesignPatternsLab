@@ -37,7 +37,7 @@ private String addMeat() {
 
 //Dressing Decorator
 
-package com.pluralsight.decorator;
+package gr.regenerationcodingschool.decorator;
 
 public class DressingDecorator extends SandwichDecorator {
 

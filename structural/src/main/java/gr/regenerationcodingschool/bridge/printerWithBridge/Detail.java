@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.bridge;
+package gr.regenerationcodingschool.bridge.printerWithBridge;
 
 public class Detail {
 	private String label;

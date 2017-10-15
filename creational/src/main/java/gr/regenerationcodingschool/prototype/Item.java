@@ -40,7 +40,8 @@ public abstract class Item implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        this.itemCase = (Case)this.itemCase.clone();
+        //Remove comment below for deep clone
+        //this.itemCase = (Case)this.itemCase.clone();
         return super.clone();
     }
 

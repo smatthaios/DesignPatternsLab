@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.bridge.shape1;
+package gr.regenerationcodingschool.bridge.shapeWithoutBridge;
 
 public class Shape1BridgeDemo {
 
@@ -7,12 +7,13 @@ public class Shape1BridgeDemo {
 		Circle circle = new BlueCircle();
 
 		Square square = new RedSquare();
-		
-		Square greenSquare = new GreenSquare();
+
+		// What if I want a green square?
+		//Square greenSquare = new GreenSquare();
 
 		circle.applyColor();
 		square.applyColor();
-		greenSquare.applyColor();
+		//greenSquare.applyColor();
 	}
 
 }

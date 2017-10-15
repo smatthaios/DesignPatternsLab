@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.bridge.shape1;
+package gr.regenerationcodingschool.bridge.shapeWithoutBridge;
 
 public class RedSquare extends Square {
 
