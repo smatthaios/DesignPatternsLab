@@ -3,9 +3,9 @@ package gr.regenerationcodingschool.flyweight;
 import java.util.HashMap;
 import java.util.Map;
 
-//Catalog acts as a factory and cache for Item flyweight objects
-public class Catalog {
-	private Map<String, Item> items = new HashMap<String, Item>();
+//Registry acts as a factory and cache for Item flyweight objects
+public class Registry {
+	private Map<String, Item> items = new HashMap<>();
 
 	//factory method
 	public Item lookup(String itemName) {

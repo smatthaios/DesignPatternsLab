@@ -5,11 +5,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class InventorySystem {
 	
-	private final Catalog catalog = new Catalog();
+	private final Registry registry = new Registry();
 	private final List<Order> orders = new CopyOnWriteArrayList<Order>();
 	
 	void takeOrder(String itemName, int orderNumber) {
-		Item item = catalog.lookup(itemName);
+		Item item = registry.lookup(itemName);
 		Order order = new Order(orderNumber, item);
 		orders.add(order);
 	}
@@ -23,6 +23,6 @@ public class InventorySystem {
 
 	String report() {
 		return "\nTotal Item objects made: "
-				+ catalog.totalItemsMade();
+				+ registry.totalItemsMade();
 	}
 }
