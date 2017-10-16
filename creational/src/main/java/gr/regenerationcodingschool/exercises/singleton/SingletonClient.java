@@ -7,11 +7,11 @@ public class SingletonClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(SingletonClient.class);
 
     public static void main(String args[]) {
-        Singleton singleton = Singleton.getInstance();
+        Singleton singleton = new Singleton();
         LOGGER.info(singleton.toString());
         LOGGER.info(singleton.getDescription());
 
-        Singleton singleton2 = Singleton.getInstance();
+        Singleton singleton2 = new Singleton();
         LOGGER.info(singleton2.toString());
         LOGGER.info(singleton.getDescription());
 
