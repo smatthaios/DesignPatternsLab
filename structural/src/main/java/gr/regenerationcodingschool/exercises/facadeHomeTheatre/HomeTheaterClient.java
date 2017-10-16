@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.exercises.facade;
+package gr.regenerationcodingschool.exercises.facadeHomeTheatre;
 
 public class HomeTheaterClient {
 	public static void main(String[] args) {

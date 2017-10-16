@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.exercises.facade;
+package gr.regenerationcodingschool.exercises.facadeHomeTheatre;
 
 public class DvdPlayer {
 	String description;
