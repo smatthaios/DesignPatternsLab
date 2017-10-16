@@ -1,6 +1,6 @@
 package gr.regenerationcodingschool.patterns.bridge.shapeWithBridge;
 
-public class Shape2BridgeDemo {
+public class ShapeBridgeDemo {
 
 	public static void main(String[] args) {
 		Color blue = new Blue();

@@ -1,6 +1,6 @@
 package gr.regenerationcodingschool.patterns.bridge.shapeWithoutBridge;
 
-public class Shape1BridgeDemo {
+public class ShapeBridgeDemo {
 
 	public static void main(String args[]) {
 
