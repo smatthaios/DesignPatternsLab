@@ -1,8 +1,8 @@
-package gr.regenerationcodingschool.exercises.pizzaStore;
+package gr.regenerationcodingschool.exercises.pizzaStore.pizzas;
 
-public class GreekPizza extends Pizza {
-    public GreekPizza() {
-        name = "Greek Pizza";
+public class ChalandriGreekPizza extends Pizza {
+    public ChalandriGreekPizza() {
+        name = "Chalandri Greek Pizza";
         dough = "Crust";
         sauce = "Marinara sauce";
         toppings.add("Shredded mozzarella");
