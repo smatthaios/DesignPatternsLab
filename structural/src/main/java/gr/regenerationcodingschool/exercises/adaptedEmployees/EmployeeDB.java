@@ -1,6 +1,6 @@
 package gr.regenerationcodingschool.exercises.adaptedEmployees;
 
-public class EmployeeDB {
+public class EmployeeDB implements Employee {
 
     private String id;
     private String firstName;
