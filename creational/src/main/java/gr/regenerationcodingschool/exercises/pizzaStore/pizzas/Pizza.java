@@ -1,6 +1,5 @@
-package gr.regenerationcodingschool.exercises.pizzaStore;
+package gr.regenerationcodingschool.exercises.pizzaStore.pizzas;
 
-import gr.regenerationcodingschool.patterns.abstractFactory.AbstractFactoryDocumentBuilderFactoryDemo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

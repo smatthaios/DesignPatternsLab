@@ -8,9 +8,10 @@ public class BuilderClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(BuilderClient.class);
 
     public static void main(String args[]) {
-        User user = new User();
+        UserBuilder userBuilder = UserBuilder.getUserBuilder("Stelios", "Matthaios");
+        User user = userBuilder.withAge(30)
+                .build();
+
         LOGGER.info(user.toString());
     }
-
-
 }
