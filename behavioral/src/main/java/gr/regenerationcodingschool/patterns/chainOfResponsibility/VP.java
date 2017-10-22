@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.chainOfResponsibility;
+package gr.regenerationcodingschool.patterns.chainOfResponsibility;
 
 public class VP extends Handler {
 
