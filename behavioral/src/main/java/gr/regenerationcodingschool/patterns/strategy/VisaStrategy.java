@@ -2,21 +2,20 @@ package gr.regenerationcodingschool.patterns.strategy;
 
 public class VisaStrategy extends ValidationStrategy {
 
-	@Override
-	public boolean isValid(CreditCard creditCard) {
-		boolean isValid = true;
-		
-		isValid = creditCard.getNumber().startsWith("4");
-		
-		if(isValid) {
-			isValid = creditCard.getNumber().length() == 16;
-		}
-		
-		if(isValid) {
-			isValid = passesLuhn(creditCard.getNumber());
-		}
-		
-		return isValid;
-	}
+    private static final int VALID_VISA_CARD_DIGIT_LENGTH = 16;
+    private static final String VALID_VISA_CARD_PREFIX = "4";
+
+    @Override
+    public boolean isValid(CreditCard creditCard) {
+        return hasCorrectPrefix(creditCard.getNumber()) && hasCorrectLength(creditCard.getNumber()) && passesLuhn(creditCard.getNumber());
+    }
+
+    private boolean hasCorrectPrefix(String creditCardNumber) {
+        return creditCardNumber.startsWith(VALID_VISA_CARD_PREFIX);
+    }
+
+    private boolean hasCorrectLength(String creditCardNumber) {
+        return creditCardNumber.length() == VALID_VISA_CARD_DIGIT_LENGTH;
+    }
 
 }

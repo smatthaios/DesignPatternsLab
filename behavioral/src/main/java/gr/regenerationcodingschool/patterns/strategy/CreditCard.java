@@ -5,14 +5,14 @@ public class CreditCard {
 	private String number;
 	private String date;
 	private String cvv;
-	private ValidationStrategy strategy;
+	private ValidationStrategy cardValidator;
 	
-	public CreditCard(ValidationStrategy strategy) {
-		this.strategy = strategy;
+	public CreditCard(ValidationStrategy cardValidator) {
+		this.cardValidator = cardValidator;
 	}
 	
 	public boolean isValid() {
-		return strategy.isValid(this);
+		return cardValidator.isValid(this);
 	}
 
 	public String getNumber() {
