@@ -1,5 +1,5 @@
 package gr.regenerationcodingschool.patterns.visitor;
 
-public interface AtvPart {
+public interface AtvPartElement {
 	public void accept(AtvPartVisitor visitor);
 }

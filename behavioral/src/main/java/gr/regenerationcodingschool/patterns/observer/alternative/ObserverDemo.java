@@ -1,4 +1,4 @@
-package gr.regenerationcodingschool.patterns.observer;
+package gr.regenerationcodingschool.patterns.observer.alternative;
 
 public class ObserverDemo {
 

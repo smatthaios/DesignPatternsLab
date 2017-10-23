@@ -1,6 +1,6 @@
 package gr.regenerationcodingschool.patterns.command.threadDemo;
 
-public class CommandEverydayDemo {
+public class CommandThreadDemo {
 
     public static void main(String[] args) {
         // Runnable is the command interface
